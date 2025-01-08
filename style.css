@@ -1,3 +1,11 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image:radial-gradient(white,pink);
+}
+
 /* title  */
 h1 {
     font-size:70px;
@@ -8,4 +16,34 @@ h1 {
 
 .form-label {
     font-size:30px;
+}
+
+.submit {
+    font-size:20px;
+    border:2px solid black;
+}
+
+/* instructions button */
+
+.instructions {
+    border-radius: 10px;
+    background-color:rgb(34, 74, 109);
+    font-size:25px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+/* gameplay section */
+
+#rectangle {
+    background-image: url(imgs/tableforrpsbackground.jpeg);
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    width:auto max-content;
+    height:500px;
+    border:3px solid white;
 }
