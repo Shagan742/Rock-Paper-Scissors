@@ -54,17 +54,24 @@ img {
 #choice1 {
     width:120px;
     height:120px;
-
+    background-color:pink;
 }
 
 #choice2 {
     width:120px;
     height:120px;
+    background-color: pink;
 } 
 
 #choice3 {
     width:120px;
     height:120px;
+    background-color: pink;
+}
+
+
+#choice1:hover, #choice2:hover, #choice3:hover {
+    transform:scale(1.1);
 }
 
 /* instructions section */
