@@ -23,7 +23,78 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+
+
+
+        <main>
+            <div class="container text-center">
+
+            <!-- header -->
+                <div class="row m-3">
+                    <div class="col">
+                        <h1>Rock Paper Scissors</h1>
+                    </div>
+                </div>
+
+                <!-- user enters their name  -->
+                <div class="row d-flex justify-content-center m-3">
+                    <div class="col-5">
+                        <label for="username" class="form-label">What's your name?</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
+                    </div>
+                </div>
+
+                <!--submit button-->
+                <div class="row d-flex justify-content-center m-3">
+                    <div class="col-3">
+                        
+                 <div type="submit" class="btn d-flex justify-content-center mx-5" onclick="submitUserName()">Submit</div>
+                    </div>
+                </div>
+
+                <!-- user clicks this to go to instructions -->
+                <button class="instructions"><a href="#instructions">Click for Instructions</a></button>
+
+
+                <!-- user plays here -->
+                 <div class="row">
+                    <div class="col">
+                        play game
+                    </div>
+                 </div>
+
+                 <!-- these are the promised instructions for the player -->
+                 <section id="instructions">
+                    <div class="row">
+                        <div class="col">
+                            <h3>How To Play</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p>There will be 5 total rounds
+                                <br>
+                                <br>
+                                To play, just click rock, paper, or scissors and the computer will generate any.
+                                <br>
+                                <br>
+                                 If you win, your score will increase by 1. 
+                                 <br>
+                                 <br>
+                                If not, the computer's score will increase instead. 
+                                <br>
+                                <br>
+                                If you win OR lose, you can always replay!!
+                            </p>
+                        </div>
+                    </div>
+                 </section>
+            </div>
+        </main>
+
+
+
         <footer>
             <!-- place footer here -->
         </footer>
