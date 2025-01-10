@@ -1,5 +1,8 @@
+// user options
 
-
+function choice1Clicked(userChoicePutSmallerScreen, userChoicePutLargerScreen) {
+  const userChoicePutSmallerScreen=choice1Clicked.addEventListener('click');
+}
 
 
 
@@ -70,7 +73,7 @@
 //codeacademy code that i dont know wtf its saying
 const getUserChoice = (userInput) => {
   userInput=userInput.toLowerCase();
-  if (userInput==='rock' || userInput==='paper' || userInput==='scissors' || userInput==='bomb') {
+  if (userInput==='rock' || userInput==='paper' || userInput==='scissors') {
     return userInput;
   } else {
     console.log('no');
@@ -123,20 +126,10 @@ function determineWinner(userChoice, computerChoice) {
       return 'tie!';
     }
   }
-
-  if (userChoice==='bomb') {
-    if (computerChoice==='paper') {
-      return 'user wins';
-    } else if (computerChoice==='scissors'){
-      return 'user wins';
-    } else if (computerChoice==='rock') {
-      return 'user wins';
-    }
-  }
 }
 
 function playGame() {
-  const userChoice=getUserChoice('bomb');
+  const userChoice=getUserChoice('rock');
   const computerChoice=getComputerChoice();
 
   console.log(userChoice);

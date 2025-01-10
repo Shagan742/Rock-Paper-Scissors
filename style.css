@@ -9,13 +9,16 @@ body {
 /* title  */
 h1 {
     font-size:70px;
+    font-family: "playwrite-cc-au-tas", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 
 /* form for user to put in their name */
 
 .form-label {
-    font-size:30px;
+    font-size:25px;
 }
 
 .submit {
@@ -77,6 +80,55 @@ img {
     background-color: pink;
 }
 
+#userChoicePutSmallerScreen {
+    position:relative;
+    z-index:5;
+    border:2px solid black;
+    top:-200px;
+    left:20px;
+    width:120px;
+    height:120px;
+}
+
+#userChoicePutLargerScreen {
+    position:relative;
+    z-index:5;
+    border:2px solid black;
+    top:-200px;
+    left:240px;
+    width:120px;
+    height:120px;
+}
+
+#computerChoicePutSmallerScreen {
+    position:relative;
+    width:120px;
+    height:120px;
+    z-index:7;
+    top:-320px;
+    left:280px;
+    border:2px solid white;
+}
+
+#computerChoicePutLargerScreen {
+    position:relative;
+    width:120px;
+    height:120px;
+    z-index:7;
+    top:-320px;
+    left:680px;
+    border:2px solid white;
+}
+
+.choicessmallscreen {
+    position:relative;
+    top:-200px;
+}
+
+.choiceslargescreen {
+    position:relative;
+    top:-200px;
+}
 
 #choice1:hover, #choice2:hover, #choice3:hover {
     transform:scale(1.1);
@@ -89,11 +141,16 @@ img {
     border-radius:30px;
     border:2px solid white;
     box-shadow:2px 2px 40px black;
+    top:-100px;
+    position:relative;
 }
 
 
 h3 {
     font-size:50px;
+    font-family: "playwrite-cc-au-tas", sans-serif;
+font-weight: 400;
+font-style: normal;
 
 }
 
