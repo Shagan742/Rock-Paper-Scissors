@@ -37,21 +37,37 @@ containerTwo.innerHTML=htmlImage;
 function genComputerChoice() {
 
   const computerChoiceContainer=document.getElementById('computerChoicePutSmallerScreen');
-  const randomNumber=Math.floor(Math.random()*3);
+  const randomNumber=Math.floor(Math.random()*6);
 
   const computerChoiceContainerTwo=document.getElementById('computerChoicePutLargerScreen');
 
   if(randomNumber===0) {
-    computerChoiceContainer.innerHTML='<img src="imgs/pngegg.png">';
+    computerChoiceContainer.innerHTML='<img src="imgs/paper.png">';
   } else if (randomNumber===1) {
+    computerChoiceContainer.innerHTML='<img src="imgs/pngegg.png">';
+  } else if (randomNumber===2) {
+    computerChoiceContainer.innerHTML='<img src="imgs/scissors.png">';
+  } else if (randomNumber===3) {
+    computerChoiceContainer.innerHTML='<img src="imgs/pngegg.png">';
+  } else if (randomNumber===4) {
+    computerChoiceContainer.innerHTML='<img src="imgs/paper.png">';
+  } else if (randomNumber===5) {
     computerChoiceContainer.innerHTML='<img src="imgs/scissors.png">';
   } else {
     computerChoiceContainer.innerHTML='<img src="imgs/paper.png">';
   }
 
   if(randomNumber===0) {
-    computerChoiceContainerTwo.innerHTML='<img src="imgs/pngegg.png">';
+    computerChoiceContainerTwo.innerHTML='<img src="imgs/paper.png">';
   } else if (randomNumber===1) {
+    computerChoiceContainerTwo.innerHTML='<img src="imgs/pngegg.png">';
+  } else if (randomNumber===2) {
+    computerChoiceContainerTwo.innerHTML='<img src="imgs/scissors.png">';
+  } else if (randomNumber===3) {
+    computerChoiceContainerTwo.innerHTML='<img src="imgs/pngegg.png">';
+  } else if (randomNumber===4) {
+    computerChoiceContainerTwo.innerHTML='<img src="imgs/paper.png">';
+  } else if (randomNumber===5) {
     computerChoiceContainerTwo.innerHTML='<img src="imgs/scissors.png">';
   } else {
     computerChoiceContainerTwo.innerHTML='<img src="imgs/paper.png">';
