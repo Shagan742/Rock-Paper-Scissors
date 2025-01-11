@@ -1,3 +1,6 @@
+//username input box thing
+
+
 // user options
 
 function choiceClicked() {
@@ -34,6 +37,8 @@ containerTwo.innerHTML=htmlImage;
 
 }
 
+
+//computer options
 function genComputerChoice() {
 
   const computerChoiceContainer=document.getElementById('computerChoicePutSmallerScreen');
@@ -74,6 +79,12 @@ function genComputerChoice() {
   }
 
 }
+
+
+//declaring winners and losers
+//update score
+
+
 
 
 
