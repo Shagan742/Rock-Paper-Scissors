@@ -1,10 +1,15 @@
 // user options
 
-function choice1Clicked(userChoicePutSmallerScreen, userChoicePutLargerScreen) {
-  const userChoicePutSmallerScreen=choice1Clicked.addEventListener('click');
+function choice1Clicked() {
+  const userChooseRock=document.getElementById('choice1');
+// let imageChoice='';
+
+//   userChooseRock.addEventListener('click', function() {
+//     document.getElementById('userChoicePutSmallerScreen');
+    
+//   })
+
 }
-
-
 
 
 
