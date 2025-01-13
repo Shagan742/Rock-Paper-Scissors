@@ -90,6 +90,18 @@ img {
     height:120px;
 }
 
+
+#userChoicePutMediumScreen {
+    position:relative;
+    z-index:5;
+    border:2px solid black;
+    top:-200px;
+    left:240px;
+    width:120px;
+    height:120px;
+}
+
+
 #userChoicePutLargerScreen {
     position:relative;
     z-index:5;
@@ -100,6 +112,8 @@ img {
     height:120px;
 }
 
+
+
 #computerChoicePutSmallerScreen {
     position:relative;
     width:120px;
@@ -107,6 +121,16 @@ img {
     z-index:7;
     top:-320px;
     left:280px;
+    border:2px solid white;
+}
+
+#computerChoicePutMediumScreen {
+    position:relative;
+    width:120px;
+    height:120px;
+    z-index:7;
+    top:-320px;
+    left:520px;
     border:2px solid white;
 }
 
@@ -132,18 +156,6 @@ img {
 
 #choice1:hover, #choice2:hover, #choice3:hover {
     transform:scale(1.1);
-}
-
-#submit {
-    width:100px;
-    height:40px;
-    font-size:15px;
-    color:black;
-    background-color:white;
-    position:relative;
-    z-index:6;
-    margin:0 auto;
-    top:-550px;
 }
 
 /* instructions section */

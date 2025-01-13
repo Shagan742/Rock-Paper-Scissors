@@ -88,6 +88,8 @@
                     </div>
                  </div>
                 <!-- user plays here -->
+
+                <!-- small screen layout -->
                  <div class="row mb-5 mx-2 d-flex justify-content-center">
                     <div class="col-sm-10 d-block d-md-none">
                         <div id="rectangle">
@@ -101,15 +103,34 @@
 
                         </div>
                     </div>
+
                     <div class="row d-flex justify-content-center choicessmallscreen">
-                        <button id="choice1" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="choiceClicked()"><img src="imgs/pngegg.png"></button>
-                        <button id="choice2" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="choiceClicked()"><img src="imgs/paper.png"></button>
-                        <button id="choice3" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="choiceClicked()"><img src="imgs/scissors.png"></button>
+                        <button id="choice1" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                        <button id="choice2" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                        <button id="choice3" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
                     </div>
                    
+
+                    <!-- medium screen layout -->
+                    <div class="col-md-10 d-none d-md-block">
+                        <div id="rectangle">
+                            
+                        </div>
+                        <div id="userChoicePutMediumScreen">
+                            
+                        </div>
+                        <div id="computerChoicePutMediumScreen">
+
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center choicesmediumscreen">
+                        <button id="choice1" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                        <button id="choice2" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                        <button id="choice3" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
+                    </div>
                    
-                   
-                        <div class="col-md-10 d-none d-md-block">
+                    <!-- large screen layout -->
+                        <div class="col-lg-10 d-sm-none d-block">
                         <div id="rectangle">
                             
                         </div>
@@ -117,24 +138,20 @@
                             
                         </div>
                         <div id="computerChoicePutLargerScreen">
-
+                            
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center choiceslargescreen">
-                        <button id="choice1" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="choiceClicked()"><img src="imgs/pngegg.png"></button>
-                            <button id="choice2" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="choiceClicked()"><img src="imgs/paper.png"></button>
-                            <button id="choice3" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="choiceClicked()"><img src="imgs/scissors.png"></button>
+                        <button id="choice1" class="col-md-10 d-sm-none d-block mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                        <button id="choice2" class="col-md-10 d-sm-none d-block mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                        <button id="choice3" class="col-md-10 d-sm-none d-block mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
                     </div>
 
                  </div>
 
-                 <div class="row">
-                    <button id="submit" onclick="genComputerChoice()">Click me</button>
-                </div>
-
                  <!-- these are the promised instructions for the player -->
                  <section id="instructions" class="mb-5">
-                    <div class="row">
+                    <div class="row mt-5">
                         <div class="col mt-5 mb-3">
                             <h3>How To Play</h3>
                         </div>
