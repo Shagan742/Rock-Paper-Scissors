@@ -5,30 +5,41 @@ function getComputerChoice() {
     return 'rock';
   } else if (number===1) {
     return 'scissors';
-  } else if (number===2){
+  } else if (number===2) {
     return 'paper';
   } 
 }
 
-function showComputerChoice(computerChoice) {
-    if (computerChoice==='rock'){
-        document.getElementById('computerChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
-    } else if(computerChoice==='scissors') {
-        document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
-    } else if (computerChoice==='paper'){
-        document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
-    }
+function showUserChoice(userChoice) {
+  if (userChoice==='rock') {
+      document.getElementById('userChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+      document.getElementById('userChoicePutMediumScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+      document.getElementById('userChoicePutSmallerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+  } else if(userChoice==='scissors') {
+      document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
+      document.getElementById('userChoicePutMediumScreen').innerHTML="<img src='imgs/scissors.png'>";
+      document.getElementById('userChoicePutSmallerScreen').innerHTML="<img src='imgs/scissors.png'>";
+  } else if (userChoice==='paper') {
+      document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
+      document.getElementById('userChoicePutMediumScreen').innerHTML="<img src='imgs/paper.png'>";
+      document.getElementById('userChoicePutSmallerScreen').innerHTML="<img src='imgs/paper.png'>";
+  } 
 }
 
-
-function showUserChoice(userChoice) {
-    if (userChoice==='rock'){
-        document.getElementById('userChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
-    } else if(userChoice==='scissors') {
-        document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
-    } else if (userChoice==='paper') {
-        document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
-    } 
+function showComputerChoice(computerChoice) {
+      if (computerChoice==='rock') {
+        document.getElementById('computerChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+        document.getElementById('computerChoicePutMediumScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+        document.getElementById('computerChoicePutSmallerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
+    } else if(computerChoice==='scissors') {
+        document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
+        document.getElementById('computerChoicePutMediumScreen').innerHTML="<img src='imgs/scissors.png'>";
+        document.getElementById('computerChoicePutSmallerScreen').innerHTML="<img src='imgs/scissors.png'>";
+    } else if (computerChoice==='paper') {
+        document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
+        document.getElementById('computerChoicePutMediumScreen').innerHTML="<img src='imgs/paper.png'>";
+        document.getElementById('computerChoicePutSmallerScreen').innerHTML="<img src='imgs/paper.png'>";
+    }
 }
 
 
