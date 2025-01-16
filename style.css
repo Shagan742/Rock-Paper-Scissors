@@ -85,13 +85,13 @@ img {
     z-index:5;
     border:2px solid black;
     top:-200px;
-    left:20px;
+    /*left:40px;*/   
     width:120px;
     height:120px;
 }
 
 
-#userChoicePutMediumScreen {
+/* #userChoicePutMediumScreen {
     position:relative;
     z-index:5;
     border:2px solid black;
@@ -99,7 +99,7 @@ img {
     left:240px;
     width:120px;
     height:120px;
-}
+} */
 
 
 #userChoicePutLargerScreen {
@@ -107,7 +107,7 @@ img {
     z-index:5;
     border:2px solid black;
     top:-200px;
-    left:240px;
+    /* left:280px; */
     width:120px;
     height:120px;
 }
@@ -117,12 +117,12 @@ img {
     width:120px;
     height:120px;
     z-index:7;
-    top:-320px;
-    left:280px;
+    top:-200px;
+    /*left:180px;*/
     border:2px solid white;
 }
 
-#computerChoicePutMediumScreen {
+/* #computerChoicePutMediumScreen {
     position:relative;
     width:120px;
     height:120px;
@@ -130,32 +130,33 @@ img {
     top:-320px;
     left:520px;
     border:2px solid white;
-}
+} */
 
 #computerChoicePutLargerScreen {
     position:relative;
     width:120px;
     height:120px;
     z-index:7;
-    top:-320px;
-    left:920px;
+    top:-200px;
+    /* left:620px; */
     border:2px solid white;
 }
 
 .choicessmallscreen {
     position:relative;
-    top:-200px;
+    top:-120px;
 }
 
-.choicesmediumscreen {
+/* .choicesmediumscreen {
     position:relative;
     top:-200px;
-}
+} */
 
 .choiceslargescreen {
     position:relative;
-    top:-200px;
-}
+    top:-100px;
+    margin:0 auto;
+} 
 
 #choice1:hover, #choice2:hover, #choice3:hover {
     transform:scale(1.1);

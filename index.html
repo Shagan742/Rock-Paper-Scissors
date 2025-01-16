@@ -83,34 +83,60 @@
                 </div>
             </div>
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- user plays here -->
 
-           
-            <div class="row mb-5 mx-2 d-flex justify-content-center">
-                 <!-- small screen layout -->
-                <div class="col-sm-10 d-block d-md-none">
+         <!-- small screen layout-->    
+            <div class="row mb-5 mx-2 d-flex justify-content-center d-xs-block d-md-none">
+               
+                <div class="col-xs-10">
                     <div id="rectangle">
 
                     </div>
-                    <div id="userChoicePutSmallerScreen">
+
+                    <div class="row d-flex justify-content-center mx-auto text-center">
+                    <div id="userChoicePutSmallerScreen" class="mx-2">
 
                     </div>
 
-                    <div id="computerChoicePutSmallerScreen">
+                    <div id="computerChoicePutSmallerScreen" class="mx-2">
 
                     </div>
                 </div>
 
-                <div class="row d-flex justify-content-center choicessmallscreen">
-                    <button id="choice1" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
-                    <button id="choice2" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
-                    <button id="choice3" class="col-sm-4 d-inline-block d-md-none mb-5 mr-4 mt-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
                 </div>
-        
 
-            <!-- medium screen layout -->
-                
-                <div class="col-md-10 d-none d-md-block">
+                <div class="row d-flex justify-content-center choicessmallscreen d-xs-block d-md-none">
+                    <button id="choice1" class="col-xs-4 mb-5 mr-4 mt-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                    <button id="choice2" class="col-xs-4 mb-5 mr-4 mt-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                    <button id="choice3" class="col-xs-4 mb-5 mr-4 mt-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
+                </div>
+        </div>
+
+<!-- medium screen layout -->
+                <!-- <div class="row mb-5 mx-2 d-flex justify-content-center d-xs-none d-lg-none d-md-block">
+            
+                <div class="col-md-10">
                     <div id="rectangle">
 
                     </div>
@@ -121,35 +147,55 @@
 
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center choicesmediumscreen">
-                    <button id="choice1" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
-                    <button id="choice2" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
-                    <button id="choice3" class="col-md-10 d-none d-md-block mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
+
+                <div class="row d-flex justify-content-center choicesmediumscreen d-lg-none d-md-block d-xs-none">
+                    <button id="choice1" class="col-md-10 mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                    <button id="choice2" class="col-md-10 mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                    <button id="choice3" class="col-md-10 mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
                 </div>
-           
+           </div> -->
 
-
-
-                <!-- large screen layout -->
-                <div class="col-lg-10 d-none d-lg-block">
-                    <div id="rectangle">
-
-                    </div>
-                    <div id="userChoicePutLargerScreen">
+<!-- large screen layout -->
+           <div class="row mb-5 mx-2 d-flex justify-content-center d-none d-md-block">
+                
+                <div class="col-lg-10">
+                    <div id="rectangle" class="mx-auto d-flex justify-content-center">
 
                     </div>
-                    <div id="computerChoicePutLargerScreen">
+                 
+                    <div class="row d-flex justify-content-center mx-auto text-center">
+                    <div id="userChoicePutLargerScreen" class="mx-5">
+
+                    </div>
+                
+        
+                    <div id="computerChoicePutLargerScreen" class="mx-5">
 
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center choiceslargescreen">
-                    <button id="choice1" class="col-md-10 d-none d-lg-block mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
-                    <button id="choice2" class="col-md-10 d-none d-lg-block mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
-                    <button id="choice3" class="col-md-10 d-none d-lg-block mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
+                </div>
+
+                <div class="row d-flex justify-content-center choiceslargescreen d-none d-lg-block">
+                    <button id="choice1" class="mb-5 mx-3" onclick="playGame('rock')"><img src="imgs/pngegg.png"></button>
+                    <button id="choice2" class="mb-5 mx-3" onclick="playGame('paper')"><img src="imgs/paper.png"></button>
+                    <button id="choice3" class="mb-5 mx-3" onclick="playGame('scissors')"><img src="imgs/scissors.png"></button>
                 </div>
             </div>
 
-            <button class="btn" id="afterUserChoseChoice" onclick="submitUserChoice()">Click</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             <!-- these are the promised instructions for the player -->
@@ -179,7 +225,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        
     </main>
 
     <footer>
