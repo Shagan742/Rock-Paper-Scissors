@@ -45,6 +45,9 @@ a {
     font-size:20px;
 }
 
+#winLoseTieThing {
+    font-size:40px;
+}
 
 
 /* gameplay section */
@@ -55,6 +58,8 @@ a {
     background-position: center;
     width:300px max-content;
     height:500px;
+    position: relative;
+
 }
 
 img {
@@ -85,21 +90,9 @@ img {
     z-index:5;
     border:2px solid black;
     top:-200px;
-    /*left:40px;*/   
     width:120px;
     height:120px;
 }
-
-
-/* #userChoicePutMediumScreen {
-    position:relative;
-    z-index:5;
-    border:2px solid black;
-    top:-200px;
-    left:240px;
-    width:120px;
-    height:120px;
-} */
 
 
 #userChoicePutLargerScreen {
@@ -107,7 +100,6 @@ img {
     z-index:5;
     border:2px solid black;
     top:-200px;
-    /* left:280px; */
     width:120px;
     height:120px;
 }
@@ -118,19 +110,9 @@ img {
     height:120px;
     z-index:7;
     top:-200px;
-    /*left:180px;*/
     border:2px solid white;
 }
 
-/* #computerChoicePutMediumScreen {
-    position:relative;
-    width:120px;
-    height:120px;
-    z-index:7;
-    top:-320px;
-    left:520px;
-    border:2px solid white;
-} */
 
 #computerChoicePutLargerScreen {
     position:relative;
@@ -138,7 +120,6 @@ img {
     height:120px;
     z-index:7;
     top:-200px;
-    /* left:620px; */
     border:2px solid white;
 }
 
@@ -146,11 +127,6 @@ img {
     position:relative;
     top:-120px;
 }
-
-/* .choicesmediumscreen {
-    position:relative;
-    top:-200px;
-} */
 
 .choiceslargescreen {
     position:relative;

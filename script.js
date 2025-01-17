@@ -1,3 +1,13 @@
+// username login idk stuff
+function submitUserName() {
+  const submitUserName=prompt('What\'s your Name?');
+  console.log(submitUserName);
+  }
+
+  const userNameScore=document.getElementById('userNameScore').innerHTML=`${userNameScore}:`;
+  console.log(userNameScore);
+
+//the game
 function getComputerChoice() {
   const number=Math.floor(Math.random()*3);
 
@@ -13,15 +23,12 @@ function getComputerChoice() {
 function showUserChoice(userChoice) {
   if (userChoice==='rock') {
       document.getElementById('userChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
-      // document.getElementById('userChoicePutMediumScreen').innerHTML= "<img src='imgs/pngegg.png'>";
       document.getElementById('userChoicePutSmallerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
   } else if(userChoice==='scissors') {
       document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
-      // document.getElementById('userChoicePutMediumScreen').innerHTML="<img src='imgs/scissors.png'>";
       document.getElementById('userChoicePutSmallerScreen').innerHTML="<img src='imgs/scissors.png'>";
   } else if (userChoice==='paper') {
       document.getElementById('userChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
-      // document.getElementById('userChoicePutMediumScreen').innerHTML="<img src='imgs/paper.png'>";
       document.getElementById('userChoicePutSmallerScreen').innerHTML="<img src='imgs/paper.png'>";
   } 
 }
@@ -29,15 +36,12 @@ function showUserChoice(userChoice) {
 function showComputerChoice(computerChoice) {
       if (computerChoice==='rock') {
         document.getElementById('computerChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
-        // document.getElementById('computerChoicePutMediumScreen').innerHTML= "<img src='imgs/pngegg.png'>";
         document.getElementById('computerChoicePutSmallerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
     } else if(computerChoice==='scissors') {
         document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/scissors.png'>";
-        // document.getElementById('computerChoicePutMediumScreen').innerHTML="<img src='imgs/scissors.png'>";
         document.getElementById('computerChoicePutSmallerScreen').innerHTML="<img src='imgs/scissors.png'>";
     } else if (computerChoice==='paper') {
         document.getElementById('computerChoicePutLargerScreen').innerHTML="<img src='imgs/paper.png'>";
-        // document.getElementById('computerChoicePutMediumScreen').innerHTML="<img src='imgs/paper.png'>";
         document.getElementById('computerChoicePutSmallerScreen').innerHTML="<img src='imgs/paper.png'>";
     }
 }
@@ -45,37 +49,43 @@ function showComputerChoice(computerChoice) {
 
 
 function determineWinner(userChoice, computerChoice) {
-  if (userChoice===computerChoice) {
-    return 'tie';
-  } 
 
   if (userChoice==='rock') {
     if (computerChoice==='paper') {
-      return 'computer wins';
+      document.getElementById('winLoseTieThing').innerHTML=`${submitUserName} WINS!!!`;
+      return 'user wins';
     } else if (computerChoice==='scissors') {
+      document.getElementById('winLoseTieThing').innerHTML=`${submitUserName} WINS!!!`;
       return 'user wins';
     } else if (computerChoice==='rock') {
-      return 'tie!';
+      document.getElementById('winLoseTieThing').innerHTML='TIE!';
+      return 'tie';
     } 
   }
 
   if (userChoice==='paper') {
     if (computerChoice==='paper') {
-      return 'tie!';
+      document.getElementById('winLoseTieThing').innerHTML='TIE!';
+      return 'tie';
     } else if (computerChoice==='rock') {
+      document.getElementById('winLoseTieThing').innerHTML=`${submitUserName} WINS!!!`;
       return 'user wins';
     } else if (computerChoice==='scissors') {
+      document.getElementById('winLoseTieThing').innerHTML='Computer wins!';
       return 'computer wins';
     }
   }
 
   if (userChoice==='scissors') {
     if (computerChoice==='paper') {
+      document.getElementById('winLoseTieThing').innerHTML=`${submitUserName} WINS!!!`;
       return 'user wins';
     } else if (computerChoice==='rock') {
+      document.getElementById('winLoseTieThing').innerHTML='Computer wins!';
       return 'computer wins';
     } else if (computerChoice==='scissors') {
-      return 'tie!';
+      document.getElementById('winLoseTieThing').innerHTML='TIE!';
+      return 'tie';
     }
   }
 
@@ -92,4 +102,13 @@ function playGame(userChoice) {
 }
 
 playGame();
+
+//showing and updating score
+
+
+// function showDetermineWinner(userScore, computerScore) {
+  
+ 
+
+// }
 
