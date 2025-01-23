@@ -1,8 +1,8 @@
 // username login idk stuff
-let userName=document.getElementById('userName').innerText.charLength;
+let userName=document.getElementById('userName').innerText;
 
 function submitUserName(userName) {
-  if (userName>0) {
+  if (userName.charLength>0) {
     document.getElementById('greeting').innerText=`Hello ${userName}!`;
     return `Hello ${userName}!!`
   } else {
