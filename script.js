@@ -1,11 +1,17 @@
 // username login idk stuff
-function submitUserName() {
-  const submitUserName=prompt('What\'s your Name?');
-  console.log(submitUserName);
-  }
+let userName=document.getElementById('userName').innerText.charLength;
 
-  const userNameScore=document.getElementById('userNameScore').innerHTML=`${userNameScore}:`;
-  console.log(userNameScore);
+function submitUserName(userName) {
+  if (userName>0) {
+    document.getElementById('greeting').innerText=`Hello ${userName}!`;
+    return `Hello ${userName}!!`
+  } else {
+    return 'Hello stranger!';
+  }
+}
+
+submitUserName();
+
 
 //the game
 function getComputerChoice() {
@@ -98,7 +104,7 @@ function playGame(userChoice) {
   showComputerChoice(computerChoice);
  
 
-  console.log(determineWinner(userChoice, computerChoice));
+  // console.log(determineWinner(userChoice, computerChoice));
 }
 
 playGame();
