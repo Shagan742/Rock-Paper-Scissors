@@ -35,26 +35,29 @@
             <div class="row d-flex justify-content-center m-3">
                 <div class="col-5">
                     <form id="formForUserNameEntry">
-                    <label for="username" class="form-label">What's your name?</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
-                    <button type="submit" class="btn d-flex justify-content-center submit mx-auto"onclick="submitUserName()">Click</button>
+                        <label class="form-label">What's your name?</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
+
+                        <!--submit button-->
+                        <div type="submit" class="btn d-flex justify-content-center submit mx-auto"
+                            onclick="submitUserName()">Click</div>
                     </form>
                 </div>
 
 
-<!--submit button-->
-            <div class="row d-flex justify-content-center m-3">
-                <div class="col-sm-2">
-                    <h3 class="greeting" id="greeting">
+                <!-- greeting section -->
+                <div class="row d-flex justify-content-center m-3">
+                    <div class="col-sm-2">
+                        <h3 class="greeting" id="greeting">
 
-                    </h3>
+                        </h3>
+                    </div>
                 </div>
-            </div>
 
 
             </div>
 
-            
+
 
             <!-- user clicks this to go to instructions -->
             <button class="instructions my-5"><a href="#instructions">Click for Instructions</a></button>
