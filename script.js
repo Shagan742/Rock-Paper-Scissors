@@ -107,17 +107,29 @@ function determineWinner(userChoice, computerChoice) {
     }
   }
 
+
   let roundsWonUser=document.getElementById('roundsWonUser').innerHTML=0;
   let roundsWonComputer=document.getElementById('roundsWonComputer').innerHTML=0;
 
-  if(userScore===5 && computerScore<5) {
+  if(userScore>=5 && computerScore<5) {
     roundsWonUser++
     document.getElementById('roundsWonUser').innerText=roundsWonUser;
+
   } else if (userScore<5 && computerScore===5) {
     roundsWonComputer++
     document.getElementById('roundsWonComputer').innerText=roundsWonComputer;
-  } 
+  } else if (userScore===5 && computerScore===5) {
+    document.getElementById('resetButton').innerText='Reset';
+
+    roundsWonComputer++
+    document.getElementById('roundsWonComputer').innerText=roundsWonComputer;
+
+    roundsWonUser=roundsWonUser++
+    document.getElementById('roundsWonUser').innerText=roundsWonUser;
+  } else if (userScore>5 && computerScore===5)
+
 }
+
 
 
 
