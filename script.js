@@ -52,19 +52,21 @@ function showComputerChoice(computerChoice) {
     }
 }
 
-let userScore='';
-let computerScore='';
+let userScore=document.getElementById('userScore').innerHTML=0;
+let computerScore=document.getElementById('computerScore').innerHTML=0;
 
 function determineWinner(userChoice, computerChoice) {
-
-showUserScore=document.getElementById('userScore');
-showComputerScore=document.getElementById('computerScore');
 
   if (userChoice==='rock') {
     if (computerChoice==='paper') {
       document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      userScore++
+      document.getElementById('userScore').innerText = userScore;
+
     } else if (computerChoice==='scissors') {
       document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      userScore++
+      document.getElementById('userScore').innerText = userScore;
 
     } else if (computerChoice==='rock') {
       document.getElementById('winLoseTieThing').innerHTML='TIE!';
@@ -74,24 +76,52 @@ showComputerScore=document.getElementById('computerScore');
   if (userChoice==='paper') {
     if (computerChoice==='paper') {
       document.getElementById('winLoseTieThing').innerHTML='TIE!';
+
     } else if (computerChoice==='rock') {
       document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      userScore++
+      document.getElementById('userScore').innerText = userScore;
+
     } else if (computerChoice==='scissors') {
       document.getElementById('winLoseTieThing').innerHTML='Computer wins!';
+      computerScore++
+      document.getElementById('computerScore').innerText = computerScore;
+
     }
   }
 
   if (userChoice==='scissors') {
     if (computerChoice==='paper') {
       document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      userScore++
+      document.getElementById('userScore').innerText = userScore;
+
     } else if (computerChoice==='rock') {
       document.getElementById('winLoseTieThing').innerHTML='Computer wins!';
+      computerScore++
+      document.getElementById('computerScore').innerText = computerScore;
+
+
     } else if (computerChoice==='scissors') {
       document.getElementById('winLoseTieThing').innerHTML='TIE!';
     }
   }
 
+  let roundsWonUser=document.getElementById('roundsWonUser').innerHTML=0;
+  let roundsWonComputer=document.getElementById('roundsWonComputer').innerHTML=0;
+
+  if(userScore===5 && computerScore<5) {
+    roundsWonUser++
+    document.getElementById('roundsWonUser').innerText=roundsWonUser;
+  } else if (userScore<5 && computerScore===5) {
+    roundsWonComputer++
+    document.getElementById('roundsWonComputer').innerText=roundsWonComputer;
+  } 
 }
+
+
+
+
 
 function playGame(userChoice) {
   const computerChoice=getComputerChoice();

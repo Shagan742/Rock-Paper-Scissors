@@ -39,7 +39,7 @@
                         <input type="text" class="form-control" id="userName" placeholder="Enter your name" required>
 
                         <!--submit button-->
-                        <div type="submit" class="btn d-flex justify-content-center submit mx-auto"
+                        <div type="submit" class="btn d-flex justify-content-center submit mx-auto col-3 mt-3"
                             onclick="submitUserName()">Click</div>
                     </form>
                 </div>
@@ -47,7 +47,7 @@
 
                 <!-- greeting section -->
                 <div class="row d-flex justify-content-center m-3">
-                    <div class="col-sm-2">
+                    <div class="col-sm-5 mt-4">
                         <h3 class="greeting" id="greeting">
 
                         </h3>
@@ -61,8 +61,27 @@
 
             <!-- user clicks this to go to instructions -->
             <button class="instructions my-5"><a href="#instructions">Click for Instructions</a></button>
+        <div class="row">
+            <div class="col text-center d-flex justify-content-center mb-5">
+                <table>
+                    <tr class="mb-5">
+                        <td class="px-5 mx-auto">
+                            <h4 class="roundswontitle">Your Rounds Won:</h4>
+                            <p id="roundsWonUser">
+                            
+                            </p>
+                        </td>
 
-
+                        <td class="px-5 mx-auto">
+                            <h4 class="roundswontitle">Computer's Rounds Won:</h4>
+                            <p id="roundsWonComputer">
+                            
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
             <!-- score board -->
             <div class="row">
                 <div class="col">
