@@ -54,6 +54,8 @@ function showComputerChoice(computerChoice) {
 
 let userScore=document.getElementById('userScore').innerHTML=0;
 let computerScore=document.getElementById('computerScore').innerHTML=0;
+let roundsWonUser=document.getElementById('roundsWonUser').innerHTML=0;
+let roundsWonComputer=document.getElementById('roundsWonComputer').innerHTML=0;
 
 function determineWinner(userChoice, computerChoice) {
 
@@ -109,30 +111,30 @@ function determineWinner(userChoice, computerChoice) {
 
 
 
-  let roundsWonUser=document.getElementById('roundsWonUser').innerHTML=0;
-  let roundsWonComputer=document.getElementById('roundsWonComputer').innerHTML=0;
 
-  if(userScore>=5 && computerScore<=5 && userScore>computerScore) {
+  if(userScore===5 && computerScore<5 && userScore>computerScore) {
     roundsWonUser++
     document.getElementById('roundsWonUser').innerText=roundsWonUser;
-    document.getElementById('resetButton').innerText='Reset';
+    document.getElementById('thisStoresResetButton').innerHTML='<div id="resetButton" class="btn d-flex justify-content-center mb-3" onclick="resetGame()">Reset</div>';
 
-
-
-  } else if (userScore<=5 && computerScore>=5 && userScore<computerScore) {
-    document.getElementById('resetButton').innerText='Reset';
+  } else if (userScore<5 && computerScore===5 && userScore<computerScore) {
     roundsWonComputer++
+    document.getElementById('thisStoresResetButton').innerHTML='<div id="resetButton" class="btn d-flex justify-content-center mb-3" onclick="resetGame()">Reset</div>';
     document.getElementById('roundsWonComputer').innerText=roundsWonComputer;
   } 
-
-
 
 }
 
 
+function resetGame() {
+  userScore=document.getElementById('userScore').innerHTML=0;
+  computerScore=document.getElementById('computerScore').innerHTML=0;
 
-
-
+ // document.getElementById('userChoiceSmallerScreen').innerHTML='<img src="idk">';
+  document.getElementById('userChoicePutLargerScreen').innerHTML='<img src="idk">';
+  //document.getElementById('computerChoiceSmallerScreen').innerHTML='<img src="idk">';
+  document.getElementById('computerChoicePutLargerScreen').innerHTML='<img src="idk">';
+}
 
 
 

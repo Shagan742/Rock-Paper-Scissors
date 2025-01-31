@@ -138,6 +138,27 @@ img {
     transform:scale(1.1);
 }
 
+#resetButton {
+    width:70px;
+    height:50px;
+    font-size:20px;
+    background-image:linear-gradient(pink, white, pink);
+    border:3px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#resetButton:hover {
+    width:70px;
+    height:50px;
+    font-size:20px;
+    background-image:linear-gradient(pink, white, pink);
+    border:3px solid white;
+    border-radius: 5px;
+    margin: 0 auto;
+    transform:scale(1.1);
+}
+
 /* instructions section */
 
 #instructions {
