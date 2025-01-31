@@ -130,10 +130,10 @@ function resetGame() {
   userScore=document.getElementById('userScore').innerHTML=0;
   computerScore=document.getElementById('computerScore').innerHTML=0;
 
- // document.getElementById('userChoiceSmallerScreen').innerHTML='<img src="idk">';
-  document.getElementById('userChoicePutLargerScreen').innerHTML='<img src="idk">';
-  //document.getElementById('computerChoiceSmallerScreen').innerHTML='<img src="idk">';
-  document.getElementById('computerChoicePutLargerScreen').innerHTML='<img src="idk">';
+ document.getElementById('userChoicePutSmallerScreen').innerHTML=' ';
+  document.getElementById('userChoicePutLargerScreen').innerHTML=' ';
+  document.getElementById('computerChoicePutSmallerScreen').innerHTML=' ';
+  document.getElementById('computerChoicePutLargerScreen').innerHTML=' ';
 }
 
 
