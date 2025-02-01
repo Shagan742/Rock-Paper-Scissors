@@ -123,6 +123,12 @@ function determineWinner(userChoice, computerChoice) {
     document.getElementById('roundsWonComputer').innerText=roundsWonComputer;
   } 
 
+  if(roundsWonUser>=5 && roundsWonComputer<5) {
+    document.getElementById('finalDeclareWinner').innerHTML='<h3>CONGRATS!!!!</h3>';
+  } else if (roundsWonComputer>=5 && roundsWonUser<5) {
+    document.getElementById('finalDeclareWinner').innerHTML='<h3>Computer won, too bad...</h3>';
+  }
+
 }
 
 
@@ -134,6 +140,7 @@ function resetGame() {
   document.getElementById('userChoicePutLargerScreen').innerHTML=' ';
   document.getElementById('computerChoicePutSmallerScreen').innerHTML=' ';
   document.getElementById('computerChoicePutLargerScreen').innerHTML=' ';
+  document.getElementById('winLoseTieThing').innerHTML=' ';
 }
 
 
