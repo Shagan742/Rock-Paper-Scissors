@@ -61,12 +61,12 @@ function determineWinner(userChoice, computerChoice) {
 
   if (userChoice==='rock') {
     if (computerChoice==='paper') {
-      document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      document.getElementById('winLoseTieThing').innerHTML='YOU WIN!!!';
       userScore++
       document.getElementById('userScore').innerText = userScore;
 
     } else if (computerChoice==='scissors') {
-      document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      document.getElementById('winLoseTieThing').innerHTML='YOU WIN!!!';
       userScore++
       document.getElementById('userScore').innerText = userScore;
 
@@ -80,7 +80,7 @@ function determineWinner(userChoice, computerChoice) {
       document.getElementById('winLoseTieThing').innerHTML='TIE!';
 
     } else if (computerChoice==='rock') {
-      document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      document.getElementById('winLoseTieThing').innerHTML='YOU WIN!!!';
       userScore++
       document.getElementById('userScore').innerText = userScore;
 
@@ -94,7 +94,7 @@ function determineWinner(userChoice, computerChoice) {
 
   if (userChoice==='scissors') {
     if (computerChoice==='paper') {
-      document.getElementById('winLoseTieThing').innerHTML=`${userName} WINS!!!`;
+      document.getElementById('winLoseTieThing').innerHTML='YOU WIN!!!';
       userScore++
       document.getElementById('userScore').innerText = userScore;
 
@@ -124,9 +124,9 @@ function determineWinner(userChoice, computerChoice) {
   } 
 
   if(roundsWonUser>=5 && roundsWonComputer<5) {
-    document.getElementById('finalDeclareWinner').innerHTML='<h3>CONGRATS!!!!</h3>';
+    document.getElementById('winLoseTieThing').innerHTML='<h4 class="finalDeclaration">CONGRATS!!!! YOU WON ALL 5 ROUNDS</h4>';
   } else if (roundsWonComputer>=5 && roundsWonUser<5) {
-    document.getElementById('finalDeclareWinner').innerHTML='<h3>Computer won, too bad...</h3>';
+    document.getElementById('winLoseTieThing').innerHTML='<h4 class="finalDeclaration">Computer won, too bad...</h4>';
   }
 
 }
