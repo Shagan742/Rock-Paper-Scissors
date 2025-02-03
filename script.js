@@ -1,8 +1,11 @@
-// username login idk stuff
+// username login 
 let userName =''
 
 function submitUserName() {
+  //takes whatever user typed in
   userName = document.getElementById('userName').value;
+
+  //if user put something in, website calls them whatever they put in. if not, theyre a stranger
   if (userName) {
     document.getElementById('greeting').innerHTML=`Hello ${userName}!`;
     document.getElementById('userNameScore').textContent=`${userName}:`;
@@ -26,6 +29,8 @@ function getComputerChoice() {
   } 
 }
 
+
+//once user clicks a thing, the placeholder puts the image of whatever user chose.
 function showUserChoice(userChoice) {
   if (userChoice==='rock') {
       document.getElementById('userChoicePutLargerScreen').innerHTML= "<img src='imgs/pngegg.png'>";
@@ -52,6 +57,8 @@ function showComputerChoice(computerChoice) {
     }
 }
 
+
+//scores and rounds are initially 0
 let userScore=document.getElementById('userScore').innerHTML=0;
 let computerScore=document.getElementById('computerScore').innerHTML=0;
 let roundsWonUser=document.getElementById('roundsWonUser').innerHTML=0;
@@ -75,6 +82,8 @@ function determineWinner(userChoice, computerChoice) {
     } 
   }
 
+
+  //whoever wins get +1 score
   if (userChoice==='paper') {
     if (computerChoice==='paper') {
       document.getElementById('winLoseTieThing').innerHTML='TIE!';
@@ -111,7 +120,7 @@ function determineWinner(userChoice, computerChoice) {
 
 
 
-
+// score reaches max of 5, whoever gets there first wins the round. max rounds are 5. 
   if(userScore===5 && computerScore<5 && userScore>computerScore) {
     roundsWonUser++
     document.getElementById('roundsWonUser').innerText=roundsWonUser;
@@ -131,7 +140,7 @@ function determineWinner(userChoice, computerChoice) {
 
 }
 
-
+//once reset game button's clicked, placeholder that holds whatever user or computer chooses empties, scores and rounds turn to 0.
 function resetGame() {
   userScore=document.getElementById('userScore').innerHTML=0;
   computerScore=document.getElementById('computerScore').innerHTML=0;
@@ -145,7 +154,7 @@ function resetGame() {
 
 
 
-
+//game works and is rready to play
 function playGame(userChoice) {
   const computerChoice=getComputerChoice();
 
